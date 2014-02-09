@@ -35,7 +35,9 @@ public class AddNoteActivity extends Activity {
 	       
 	    title.setText("");
 	    note.setText("");
-        Toast.makeText(AddNoteActivity.this,"Note Added", Toast.LENGTH_LONG).show();  
+        Toast.makeText(AddNoteActivity.this,"Note Added", Toast.LENGTH_LONG).show();
+        
+        this.finish();
 
 	}
 }

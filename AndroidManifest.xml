@@ -26,7 +26,7 @@
             android:label="@string/title_activity_update_note" >
         </activity>
         <activity
-            android:name=".FeedActivity"
+            android:name="com.example.bonagendav1.FeedActivity"
             android:launchMode="singleInstance" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,11 +34,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DayView" >
+        <activity android:name="com.example.bonagendav1.DayView" >
         </activity>
-        <activity android:name=".CalendarView" >
+        <activity android:name="com.example.bonagendav1.CalendarView" >
         </activity>
-        <activity android:name=".CreateActivity" >
+        <activity android:name="com.example.bonagendav1.CreateActivity" >
+        </activity>
+        <activity
+            android:name="com.example.bonagendav1.UpdateEventActivity"
+            android:label="@string/title_activity_update_event" >
         </activity>
     </application>
 

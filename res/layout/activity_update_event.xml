@@ -9,7 +9,7 @@
         android:id="@+id/relative1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".CreateActivity" >
+        tools:context=".UpdateEventActivity" >
 
         <LinearLayout
             android:id="@+id/linn"
@@ -27,14 +27,14 @@
                 android:text="Cancel" />
 
             <Button
-                android:id="@+id/addEvent"
+                android:id="@+id/updateEvent"
                   android:layout_weight="0.5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
-                android:onClick="addEvent"
-                android:text="Add" />
+                android:onClick="updateEvent"
+                android:text="Update" />
         </LinearLayout>
 
         <RelativeLayout

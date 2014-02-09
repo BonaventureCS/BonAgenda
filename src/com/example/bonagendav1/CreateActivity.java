@@ -52,5 +52,12 @@ public class CreateActivity extends Activity {
 		this.finish();
 
 	}
+	
+	public void cancelEvent(View v) {
+		Log.d("test", "canceling");
+	
+		this.finish();
+
+	}
 
 }

@@ -11,10 +11,7 @@ import android.util.Log;
 public class DBAdapter {
 	public static final String KEY_ROWID = "_id";
 	public static final String KEY_TITLE = "title";
-
-	
 	public static final String KEY_NOTES = "notes";
-
 	public static final String KEY_DESCRIPTION = "description";
 	public static final String KEY_DATE = "date";
 	public static final String KEY_TIME = "time";
@@ -167,7 +164,7 @@ public class DBAdapter {
 	// ---retrieves a particular event---
 	public Cursor getEvent(long rowId) throws SQLException {
 		Cursor mCursor = db.query(true, DATABASE_TABLE_EVENTS, new String[] {
-				KEY_ROWID, KEY_TITLE, KEY_NOTES, KEY_DESCRIPTION, KEY_TIME, KEY_TYPE}, KEY_ROWID + "=" + rowId,
+				KEY_ROWID, KEY_TITLE, KEY_DATE, KEY_TIME, KEY_TYPE, KEY_DESCRIPTION}, KEY_ROWID + "=" + rowId,
 				null, null, null, null, null);
 		if (mCursor != null) {
 			mCursor.moveToFirst();
@@ -186,13 +183,4 @@ public class DBAdapter {
 		return db.update(DATABASE_TABLE_EVENTS, args, KEY_ROWID + "=" + rowId,
 				null) > 0;
 	}
-	
-	
-	
-	//STILL NEED METHODS TO GET THE EVENTS DURING CERTIAN DAY
-	//
-	//
-	//
-	//
-	//
 }
